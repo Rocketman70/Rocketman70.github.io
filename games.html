@@ -94,62 +94,21 @@
             font-size: 2.5rem;
         }
 
-        .alert {
-            padding: 10px 15px;
-            background-color: #ffeeee;
-            border-left: 5px solid red;
-            color: red;
+        .coming-soon-box {
+            padding: 15px 20px;
+            background-color: var(--light-bg);
+            border: 2px solid var(--secondary-color);
+            color: var(--accent-color);
             margin: 20px 0;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        /* Form Styles */
-        form {
-            background-color: var(--form-bg);
-            margin: auto;
-            padding: 20px;
             border-radius: 8px;
-        }
-
-        input {
+            display: block;
+            font-weight: bold;
             width: 100%;
-            max-width: 500px;
-            height: 20px;
-            padding: 15px 20px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            background-color: var(--light-bg);
-            resize: none;
-            margin-bottom: 15px;
-            font-size: 16px;
-            transition: border 0.3s ease;
-        }
-
-        input:focus {
-            border-color: var(--secondary-color);
-            outline: none;
-        }
-
-        textarea {
-            width: 100%;
-            max-width: 500px;
-            height: 150px;
-            padding: 15px 20px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            background-color: var(--light-bg);
-            resize: vertical;
-            font-size: 16px;
-            margin-bottom: 15px;
-            transition: border 0.3s ease;
-        }
-
-        textarea:focus {
-            border-color: var(--secondary-color);
-            outline: none;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Footer Styles */
@@ -184,12 +143,16 @@
             display: flex;
             flex-wrap: wrap;
             margin: 0 -15px;
+            min-height: 150px;
+            margin: auto;
         }
 
         .column {
             flex: 1;
             padding: 0 15px;
             min-width: 300px;
+            min-height: 150px;
+            margin: auto;
         }
 
         img {
@@ -248,6 +211,27 @@
 
 
     <div class="content">
+        <div  class="row">
+            <div class="column">
+                <div style="min-height: 224.6px;" class="coming-soon-box">
+                    <p> Weekly trivia, coming 3/31 EST!</p>
+                    <a href="trivia.html" style="display: block; margin-top: 10px; padding: 8px 15px; background-color: var(--secondary-color); color: var(--accent-color); text-decoration: none; border-radius: 4px; font-weight: bold;">Trivia</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="coming-soon-box">
+                    <p>Also coming soon! ':)'</p>
+                    <img style="height: 150px; width: 200px;" src="images\Under Construction 2.jpg" alt="Under construction sign">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+            </div>
+            <div class="column">
+            </div>
+        </div>
 
     </div>
 
@@ -256,6 +240,7 @@
           <div class="contact_footer">
               <p>© 2025 Adam's GitHub Web Page</p>
               <p>See me on <a href="https://github.com/Rocketman70" style="color: var(--accent-color); text-decoration: none; font-weight: bold;">GitHub</a></p>
+              <a href="https://www.vecteezy.com/free-vector/under-construction-sign">Under Construction Sign Vectors by Vecteezy</a>
           </div>
       </div>
   </footer>
